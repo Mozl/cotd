@@ -4,7 +4,13 @@ import EditFishForm from './EditFishForm';
 
 class Inventory extends React.Component {
   render() {
-    const { addFish, loadSampleFishes, fishes, updateFish } = this.props;
+    const {
+      addFish,
+      loadSampleFishes,
+      fishes,
+      updateFish,
+      deleteFish
+    } = this.props;
     return (
       <div className="inventory">
         <h2>Inventory</h2>
@@ -13,6 +19,7 @@ class Inventory extends React.Component {
             fish={fishes[key]}
             key={key}
             updateFish={updateFish}
+            deleteFish={deleteFish}
             index={key}
           />
         ))}
