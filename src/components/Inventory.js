@@ -19,7 +19,6 @@ class Inventory extends React.Component {
 
   // look up current store in firebase database
   authHandler = async authData => {
-    console.log(authData)
     const store = await base.fetch(this.props.storeId, { context: this });
     // claim it as own
     if (!store.owner) {
@@ -43,7 +42,6 @@ class Inventory extends React.Component {
   };
 
   logout = async () => {
-    console.log('loggin out');
     await firebase.auth().signOut();
     this.setState({ uid: null });
   };
