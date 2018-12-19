@@ -3,7 +3,7 @@ import * as firebase from 'firebase';
 const apiKey = `${process.env.REACT_APP_API_KEY}`;
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: apiKey,
+  apiKey: "AIzaSyDJ22lLwahqviu0uPS4ykUqZaB6arsdRdQ",
   authDomain: 'cotd-457f9.firebaseapp.com',
   databaseURL: 'https://cotd-457f9.firebaseio.com',
   projectId: 'cotd-457f9',
